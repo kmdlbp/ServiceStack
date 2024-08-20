@@ -14,7 +14,7 @@
     <SrcDir>$(BuildSolutionDir)/src</SrcDir>
     <Configuration Condition="$(Configuration) == ''">Release</Configuration>
     <NuGetPackageDir>$(BuildSolutionDir)/NuGet/</NuGetPackageDir>
-    <PackageVersion>$(MajorVersion).$(MinorVersion).$(PatchVersion)</PackageVersion>
+    <PackageVersion>$(MajorVersion).$(MinorVersion).$(PatchVersion)-mu.2</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>

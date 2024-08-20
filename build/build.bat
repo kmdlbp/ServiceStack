@@ -1,5 +1,5 @@
-SET MSBUILD="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe"
+SET MSBUILD="C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe"
 
-REM %MSBUILD% build-common.proj /property:Configuration=Release;MinorVersion=4;PatchVersion=1
-REM %MSBUILD% build.proj /property:Configuration=Release;MinorVersion=4;PatchVersion=1
-%MSBUILD% build-core.proj /property:Configuration=Release;MinorVersion=4;PatchVersion=1
+REM %MSBUILD% build-common.proj /property:Configuration=Release;MinorVersion=8;PatchVersion=0
+%MSBUILD% build.proj /property:Configuration=Release;MinorVersion=8;PatchVersion=0
+REM %MSBUILD% build-core.proj /property:Configuration=Release;MinorVersion=8;PatchVersion=0

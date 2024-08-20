@@ -1,8 +1,8 @@
 <Project>
 
   <PropertyGroup>
-    <Version>5.8.0</Version>
-    <Authors>ServiceStack</Authors>
+    <Version>5.8.0-mu.2</Version>
+    <Authors>ServiceStack - MU Custom Build</Authors>
     <Company>ServiceStack, Inc.</Company>
     <Copyright>&#169; 2008-2019 ServiceStack, Inc</Copyright>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -13,7 +13,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/ServiceStack/ServiceStack.git</RepositoryUrl>
     <DebugType>embedded</DebugType>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
@@ -33,6 +33,9 @@
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <DefineConstants>$(DefineConstants);NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyFile>../servicestack.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
